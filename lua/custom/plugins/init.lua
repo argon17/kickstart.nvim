@@ -3,10 +3,12 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-  -- Find the plugins section and add:
   {
     'github/copilot.vim',
-    event = 'InsertEnter',
     cmd = { 'Copilot' },
   },
+  {
+    'ThePrimeagen/vim-be-good',
+    cmd = { 'VimBeGood' },
+  }
 }
