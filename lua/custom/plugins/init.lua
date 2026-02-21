@@ -2,4 +2,11 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+return {
+  -- Find the plugins section and add:
+  {
+    'github/copilot.vim',
+    event = 'InsertEnter',
+    cmd = { 'Copilot' },
+  },
+}
